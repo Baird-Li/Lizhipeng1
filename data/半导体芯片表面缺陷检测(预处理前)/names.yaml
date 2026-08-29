@@ -1,0 +1,14 @@
+train: train
+val: E:/GR-workspaces/data/trainval.txt
+test: test
+
+# number of classes
+nc: 4
+
+# class names
+# names: ['C','CN','D','IC','R','X',]
+names:
+  0: ZF-scratch
+  1: scratch
+  2: broken
+  3: pinbreak
