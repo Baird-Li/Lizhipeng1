@@ -51,43 +51,6 @@
 | 图像处理 | OpenCV + PIL | 图片读取与预处理 |
 | 评估工具 | scikit-learn | 准确率、混淆矩阵、ROC曲线 |
 
-
-## 📁 项目结构
-Lizhipeng1/
-├── app.py # Flask 主程序
-├── train.py # 模型训练脚本
-├── optimize.py # 模型优化微调脚本（混合训练+多版本管理）
-├── modelscnn_model.py # CNN模型定义（备用）
-│
-├── data/ # 数据集
-│ └── 半导体芯片表面缺陷检测(预处理后)/
-│ ├── train/ # 训练集
-│ ├── val/ # 验证集
-│ └── test/ # 测试集
-│
-├── models/ # 模型文件
-│ ├── best_model.pth # 原始模型 (91.85%)
-│ ├── best_model_optimized.pth # 最新优化模型
-│ ├── versions/ # 多版本优化模型
-│ │ ├── best_model_v_*.pth # 各时间版本
-│ │ └── versions.json # 版本元信息
-│ ├── loss_curve.png # 训练Loss曲线
-│ └── acc_curve.png # 训练Accuracy曲线
-│
-├── uploads/ # 用户上传的图片
-├── error_samples/ # 错误样本库
-│ ├── broken/ # 按预测类别分类
-│ ├── scratch/
-│ ├── pinbreak/
-│ └── error_log.csv # 错误样本日志
-│
-├── predictions.db # SQLite数据库
-├── requirements.txt # 依赖清单
-├── README.md # 项目说明
-├── 学习笔记.md # 学习笔记
-├── 选题说明.md # 选题说明
-└── 方案设计.md # 方案设计
-
 text
 
 
